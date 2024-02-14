@@ -36,6 +36,7 @@ class Login(customtkinter.CTkFrame):
         self.API_key = customtkinter.CTkEntry(master=self.tabview.tab("New Login"), placeholder_text="API Key")
         self.API_key.grid(row=3, column=0, padx=10, pady=12)
         checkbox = customtkinter.CTkCheckBox(master=self.tabview.tab("New Login"), text="Remember Login")
+<<<<<<< HEAD
         checkbox.grid(row=4, column=0, padx=10, pady=12)
         login_button = customtkinter.CTkButton(master=self.tabview.tab("New Login"), text="Login", command=self.loginButton)
         login_button.grid(row=5, column=0, padx=10, pady=12)
@@ -55,3 +56,13 @@ class Login(customtkinter.CTkFrame):
 
     def createAgentButton(self):
         print("Creating Agent")
+=======
+        checkbox.grid(row=5, column=0, padx=10, pady=12)
+        search_button = customtkinter.CTkButton(master=self.tabview.tab("New Login"), text="Login", command=self.loginUser())
+        search_button.grid(row=4, column=0, padx=10, pady=12)
+
+        # Create tab
+
+    def loginUser(self):
+        print("Login")
+>>>>>>> a2ea052d39cc6714262b4b6744337df48fb6164e
