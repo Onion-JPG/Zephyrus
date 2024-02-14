@@ -11,7 +11,7 @@ class Zephyrus(customtkinter.CTk):
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
-        login.login(self).grid(row=0, column=0, padx=10, pady=12)
+        login.Login(self).grid(row=0, column=0, padx=10, pady=10)
 
 # Configuring the theme
 customtkinter.set_appearance_mode("dark")
